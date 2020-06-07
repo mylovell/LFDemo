@@ -15,7 +15,7 @@ Install _fastlane_ using
 or alternatively using `brew cask install fastlane`
 
 # Available Actions
-### ManagerLib
+### ManagerLib 使用简单
 ```
 fastlane ManagerLib
 ```
