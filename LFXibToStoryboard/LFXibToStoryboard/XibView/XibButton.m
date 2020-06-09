@@ -1,30 +1,20 @@
 //
-//  LFButton1.m
-//  LFXibToStoryboard
+//  XibButton.m
+//  Single
 //
-//  Created by luofeng on 2020/6/8.
-//  Copyright © 2020 9130. All rights reserved.
+//  Created by Feng Luo on 2020/3/14.
+//  Copyright © 2020 Feng Luo. All rights reserved.
 //
 
-#import "LFButton1.h"
+#import "XibButton.h"
 
-@implementation LFButton1
-
+@implementation XibButton
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        NSLog(@"%s",__func__);
-        // 为了能在 xib 中看到 layer 的设置【代码中的设置，只有initWithFrame中的设置才会在xib中展示】
-//        [self _commonUse];
-        self.fontName = @"PingFangSC-Medium";
-        self.fontSize = 18;
-        self.fontColor = @"#942192";
-        self.backColor = @"#FF2600";
-        self.cornerRadius = 20;
-        self.borderWidth = 2;
-        self.borderColor = @"#267545";
+        [self setupView];
     }
     return self;
 }
@@ -33,42 +23,22 @@
 {
     self = [super initWithCoder:coder];
     if (self) {
-        NSLog(@"%s",__func__);
-        NSLog(@"titleForState----%@",[self titleForState:(UIControlStateNormal)]);
-        // 为了能让 xib 中加载出来的 layer 被真正设置
-        [self _commonUse];
+        [self setupView];
     }
     return self;
 }
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    NSLog(@"%s",__func__);
-    [self _commonUse];
+- (void)setupView {
     
-    NSLog(@"---");
-}
-
-/*
- 在这里弥补 IBInspectable 显示在 storyboard 上无效设置:
- 1、layer相关的设置 如圆角cornerRadius 、2、背景颜色backgroundColor
- 
- */
-
-- (void)_commonUse {
+    // 1、添加子控件，会实时显示
     
-    self.fontName = @"PingFangSC-Medium";
-    self.fontSize = 18;
-    self.fontColor = @"#942192";
-    self.backColor = @"#FF2600";
-    self.cornerRadius = 20;
-    self.borderWidth = 2;
-    self.borderColor = @"#267545";
+    // 2、但是设置自身属性，不会实时显示，需要通过 IBInspectable 来设置
+//    [self setBackgroundColor:[UIColor redColor]];
     
 }
 
 - (void)setFontColor:(NSString *)hex {
-    UIColor *titleColor = [LFButton1 colorWithHexString:hex alpha:1];
+    UIColor *titleColor = [XibButton colorWithHexString:hex alpha:1];
     [self setTitleColor:titleColor forState:(UIControlStateNormal)];
 }
 
@@ -93,12 +63,12 @@
 }
 
 - (void)setBorderColor:(NSString *)borderColor {
-    UIColor *color = [LFButton1 colorWithHexString:borderColor alpha:1];
+    UIColor *color = [XibButton colorWithHexString:borderColor alpha:1];
     self.layer.borderColor = color.CGColor;
 }
 
 - (void)setBackColor:(NSString *)backColor {
-    UIColor *color = [LFButton1 colorWithHexString:backColor alpha:1];
+    UIColor *color = [XibButton colorWithHexString:backColor alpha:1];
     self.backgroundColor = color;
     
 }

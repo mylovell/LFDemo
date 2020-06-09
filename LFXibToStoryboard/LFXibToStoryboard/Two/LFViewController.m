@@ -7,6 +7,7 @@
 //
 
 #import "LFViewController.h"
+#import "LFButton11.h"
 
 @interface LFViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+- (IBAction)button1Action:(LFButton11 *)sender {
+    NSLog(@"%s",__func__);
+}
+- (IBAction)button2Action:(LFButton11 *)sender {
+    NSLog(@"%s",__func__);
 }
 
 

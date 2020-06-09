@@ -1,28 +1,28 @@
 //
-//  LFButton1.h
-//  LFXibToStoryboard
+//  XibButton.h
+//  Single
 //
-//  Created by luofeng on 2020/6/8.
-//  Copyright © 2020 9130. All rights reserved.
+//  Created by Feng Luo on 2020/3/14.
+//  Copyright © 2020 Feng Luo. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-
-/* 平方字体取值：
-PingFangSC-Medium，
-PingFangSC-Semibold，
-PingFangSC-Light，
-PingFangSC-Ultralight，
-PingFangSC-Regular，
-PingFangSC-Thin
-*/
 
 NS_ASSUME_NONNULL_BEGIN
 
 IB_DESIGNABLE
 
-@interface LFButton1 : UIButton
+@interface XibButton : UIButton
 
+#pragma mark - button 属性
+/* 平方字体取值：
+ PingFangSC-Medium，
+ PingFangSC-Semibold，
+ PingFangSC-Light，
+ PingFangSC-Ultralight，
+ PingFangSC-Regular，
+ PingFangSC-Thin
+ */
 @property (nonatomic, assign) IBInspectable NSString *fontName;
 @property (nonatomic, assign) IBInspectable NSUInteger fontSize;
 @property (nonatomic, strong) IBInspectable NSString *fontColor;// 十六进制的颜色，比如 123456
@@ -33,8 +33,6 @@ IB_DESIGNABLE
 @property (nonatomic, assign) IBInspectable CGFloat borderWidth;
 @property (nonatomic, strong) IBInspectable NSString *borderColor;
 @property (nonatomic, strong) IBInspectable NSString *backColor;// 背景颜色
-
-//@property (strong, nonatomic) IBOutlet LFButton1 *mButton;
 
 @end
 

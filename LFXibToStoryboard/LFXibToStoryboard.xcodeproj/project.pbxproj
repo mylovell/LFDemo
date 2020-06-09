@@ -17,8 +17,27 @@
 		E847E1E9248E205A00B62968 /* LFButton1.xib in Resources */ = {isa = PBXBuildFile; fileRef = E847E1E8248E205A00B62968 /* LFButton1.xib */; };
 		E847E1F3248E277900B62968 /* LFLabel1.xib in Resources */ = {isa = PBXBuildFile; fileRef = E847E1F2248E277900B62968 /* LFLabel1.xib */; };
 		E847E1F6248E28CE00B62968 /* LFLabel1.m in Sources */ = {isa = PBXBuildFile; fileRef = E847E1F5248E28CE00B62968 /* LFLabel1.m */; };
-		E847E209248E5D7600B62968 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E847E208248E5D7600B62968 /* Home.storyboard */; };
-		E847E20C248E5DBB00B62968 /* LFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E847E20B248E5DBB00B62968 /* LFViewController.m */; };
+		E89E5C0B248F8661006A0E16 /* LFButton2.m in Sources */ = {isa = PBXBuildFile; fileRef = E89E5C0A248F8661006A0E16 /* LFButton2.m */; };
+		E89E5C0D248F866B006A0E16 /* LFButton2.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89E5C0C248F866B006A0E16 /* LFButton2.xib */; };
+		E89E5C10248F87F3006A0E16 /* UIColor+MQHex.m in Sources */ = {isa = PBXBuildFile; fileRef = E89E5C0E248F87F3006A0E16 /* UIColor+MQHex.m */; };
+		E89E5C12248F88BC006A0E16 /* PlayVIew.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89E5C11248F88BC006A0E16 /* PlayVIew.xib */; };
+		E89E5C15248F9047006A0E16 /* CView.m in Sources */ = {isa = PBXBuildFile; fileRef = E89E5C14248F9047006A0E16 /* CView.m */; };
+		E89E5C17248F9052006A0E16 /* CView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89E5C16248F9052006A0E16 /* CView.xib */; };
+		E89E5C1A248F961D006A0E16 /* LFButton3.m in Sources */ = {isa = PBXBuildFile; fileRef = E89E5C19248F961D006A0E16 /* LFButton3.m */; };
+		E89E5C2D248FA38D006A0E16 /* XibButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E89E5C1C248FA38D006A0E16 /* XibButton.m */; };
+		E89E5C2E248FA38D006A0E16 /* XibImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E89E5C20248FA38D006A0E16 /* XibImageView.m */; };
+		E89E5C2F248FA38D006A0E16 /* XibViewReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = E89E5C21248FA38D006A0E16 /* XibViewReadMe.md */; };
+		E89E5C30248FA38D006A0E16 /* XibView2.m in Sources */ = {isa = PBXBuildFile; fileRef = E89E5C23248FA38D006A0E16 /* XibView2.m */; };
+		E89E5C31248FA38D006A0E16 /* XibTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E89E5C25248FA38D006A0E16 /* XibTextField.m */; };
+		E89E5C32248FA38D006A0E16 /* XibBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E89E5C26248FA38D006A0E16 /* XibBarButtonItem.m */; };
+		E89E5C33248FA38D006A0E16 /* XibView.m in Sources */ = {isa = PBXBuildFile; fileRef = E89E5C28248FA38D006A0E16 /* XibView.m */; };
+		E89E5C34248FA38D006A0E16 /* XibLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E89E5C2B248FA38D006A0E16 /* XibLabel.m */; };
+		E89E5C35248FA38D006A0E16 /* XibNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E89E5C2C248FA38D006A0E16 /* XibNavigationItem.m */; };
+		E89E5C3A248FAC1D006A0E16 /* LFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89E5C37248FAC1D006A0E16 /* LFViewController.m */; };
+		E89E5C3B248FAC1D006A0E16 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E89E5C38248FAC1D006A0E16 /* Home.storyboard */; };
+		E89E5C3E248FAC38006A0E16 /* LFButton11.m in Sources */ = {isa = PBXBuildFile; fileRef = E89E5C3D248FAC38006A0E16 /* LFButton11.m */; };
+		E89E5C40248FAD81006A0E16 /* LFButton11.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89E5C3F248FAD81006A0E16 /* LFButton11.xib */; };
+		E8CC9C3B248F1BE300945B90 /* Color.md in Resources */ = {isa = PBXBuildFile; fileRef = E8CC9C3A248F1BE300945B90 /* Color.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,9 +57,41 @@
 		E847E1F2248E277900B62968 /* LFLabel1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LFLabel1.xib; sourceTree = "<group>"; };
 		E847E1F4248E28CE00B62968 /* LFLabel1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLabel1.h; sourceTree = "<group>"; };
 		E847E1F5248E28CE00B62968 /* LFLabel1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLabel1.m; sourceTree = "<group>"; };
-		E847E208248E5D7600B62968 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		E847E20A248E5DBB00B62968 /* LFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFViewController.h; sourceTree = "<group>"; };
-		E847E20B248E5DBB00B62968 /* LFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFViewController.m; sourceTree = "<group>"; };
+		E89E5C09248F8661006A0E16 /* LFButton2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFButton2.h; sourceTree = "<group>"; };
+		E89E5C0A248F8661006A0E16 /* LFButton2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFButton2.m; sourceTree = "<group>"; };
+		E89E5C0C248F866B006A0E16 /* LFButton2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LFButton2.xib; sourceTree = "<group>"; };
+		E89E5C0E248F87F3006A0E16 /* UIColor+MQHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MQHex.m"; sourceTree = "<group>"; };
+		E89E5C0F248F87F3006A0E16 /* UIColor+MQHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MQHex.h"; sourceTree = "<group>"; };
+		E89E5C11248F88BC006A0E16 /* PlayVIew.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayVIew.xib; sourceTree = "<group>"; };
+		E89E5C13248F9047006A0E16 /* CView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CView.h; sourceTree = "<group>"; };
+		E89E5C14248F9047006A0E16 /* CView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CView.m; sourceTree = "<group>"; };
+		E89E5C16248F9052006A0E16 /* CView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CView.xib; sourceTree = "<group>"; };
+		E89E5C18248F961D006A0E16 /* LFButton3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFButton3.h; sourceTree = "<group>"; };
+		E89E5C19248F961D006A0E16 /* LFButton3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFButton3.m; sourceTree = "<group>"; };
+		E89E5C1C248FA38D006A0E16 /* XibButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibButton.m; sourceTree = "<group>"; };
+		E89E5C1D248FA38D006A0E16 /* XibBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibBarButtonItem.h; sourceTree = "<group>"; };
+		E89E5C1E248FA38D006A0E16 /* XibTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibTextField.h; sourceTree = "<group>"; };
+		E89E5C1F248FA38D006A0E16 /* XibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibView.h; sourceTree = "<group>"; };
+		E89E5C20248FA38D006A0E16 /* XibImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibImageView.m; sourceTree = "<group>"; };
+		E89E5C21248FA38D006A0E16 /* XibViewReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = XibViewReadMe.md; sourceTree = "<group>"; };
+		E89E5C22248FA38D006A0E16 /* XibNavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibNavigationItem.h; sourceTree = "<group>"; };
+		E89E5C23248FA38D006A0E16 /* XibView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibView2.m; sourceTree = "<group>"; };
+		E89E5C24248FA38D006A0E16 /* XibLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibLabel.h; sourceTree = "<group>"; };
+		E89E5C25248FA38D006A0E16 /* XibTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibTextField.m; sourceTree = "<group>"; };
+		E89E5C26248FA38D006A0E16 /* XibBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibBarButtonItem.m; sourceTree = "<group>"; };
+		E89E5C27248FA38D006A0E16 /* XibButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibButton.h; sourceTree = "<group>"; };
+		E89E5C28248FA38D006A0E16 /* XibView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibView.m; sourceTree = "<group>"; };
+		E89E5C29248FA38D006A0E16 /* XibImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibImageView.h; sourceTree = "<group>"; };
+		E89E5C2A248FA38D006A0E16 /* XibView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibView2.h; sourceTree = "<group>"; };
+		E89E5C2B248FA38D006A0E16 /* XibLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibLabel.m; sourceTree = "<group>"; };
+		E89E5C2C248FA38D006A0E16 /* XibNavigationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibNavigationItem.m; sourceTree = "<group>"; };
+		E89E5C37248FAC1D006A0E16 /* LFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFViewController.m; sourceTree = "<group>"; };
+		E89E5C38248FAC1D006A0E16 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		E89E5C39248FAC1D006A0E16 /* LFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFViewController.h; sourceTree = "<group>"; };
+		E89E5C3C248FAC38006A0E16 /* LFButton11.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFButton11.h; sourceTree = "<group>"; };
+		E89E5C3D248FAC38006A0E16 /* LFButton11.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFButton11.m; sourceTree = "<group>"; };
+		E89E5C3F248FAD81006A0E16 /* LFButton11.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LFButton11.xib; sourceTree = "<group>"; };
+		E8CC9C3A248F1BE300945B90 /* Color.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Color.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,22 +128,70 @@
 				E847E1CD248E1FD700B62968 /* AppDelegate.m */,
 				E847E1D2248E1FD700B62968 /* ViewController.h */,
 				E847E1D3248E1FD700B62968 /* ViewController.m */,
+				E89E5C13248F9047006A0E16 /* CView.h */,
+				E89E5C14248F9047006A0E16 /* CView.m */,
+				E89E5C16248F9052006A0E16 /* CView.xib */,
 				E847E1F4248E28CE00B62968 /* LFLabel1.h */,
 				E847E1F5248E28CE00B62968 /* LFLabel1.m */,
 				E847E1F2248E277900B62968 /* LFLabel1.xib */,
 				E847E1E5248E202000B62968 /* LFButton1.h */,
 				E847E1E6248E202000B62968 /* LFButton1.m */,
 				E847E1E8248E205A00B62968 /* LFButton1.xib */,
+				E89E5C09248F8661006A0E16 /* LFButton2.h */,
+				E89E5C0A248F8661006A0E16 /* LFButton2.m */,
+				E89E5C0C248F866B006A0E16 /* LFButton2.xib */,
+				E89E5C18248F961D006A0E16 /* LFButton3.h */,
+				E89E5C19248F961D006A0E16 /* LFButton3.m */,
+				E89E5C11248F88BC006A0E16 /* PlayVIew.xib */,
 				E847E1D5248E1FD700B62968 /* Main.storyboard */,
-				E847E20A248E5DBB00B62968 /* LFViewController.h */,
-				E847E20B248E5DBB00B62968 /* LFViewController.m */,
-				E847E208248E5D7600B62968 /* Home.storyboard */,
 				E847E1D8248E1FD700B62968 /* Assets.xcassets */,
 				E847E1DA248E1FD700B62968 /* LaunchScreen.storyboard */,
 				E847E1DD248E1FD700B62968 /* Info.plist */,
 				E847E1DE248E1FD700B62968 /* main.m */,
+				E8CC9C3A248F1BE300945B90 /* Color.md */,
+				E89E5C36248FAC1D006A0E16 /* Two */,
+				E89E5C0F248F87F3006A0E16 /* UIColor+MQHex.h */,
+				E89E5C0E248F87F3006A0E16 /* UIColor+MQHex.m */,
+				E89E5C1B248FA38D006A0E16 /* XibView */,
 			);
 			path = LFXibToStoryboard;
+			sourceTree = "<group>";
+		};
+		E89E5C1B248FA38D006A0E16 /* XibView */ = {
+			isa = PBXGroup;
+			children = (
+				E89E5C1C248FA38D006A0E16 /* XibButton.m */,
+				E89E5C1D248FA38D006A0E16 /* XibBarButtonItem.h */,
+				E89E5C1E248FA38D006A0E16 /* XibTextField.h */,
+				E89E5C1F248FA38D006A0E16 /* XibView.h */,
+				E89E5C20248FA38D006A0E16 /* XibImageView.m */,
+				E89E5C21248FA38D006A0E16 /* XibViewReadMe.md */,
+				E89E5C22248FA38D006A0E16 /* XibNavigationItem.h */,
+				E89E5C23248FA38D006A0E16 /* XibView2.m */,
+				E89E5C24248FA38D006A0E16 /* XibLabel.h */,
+				E89E5C25248FA38D006A0E16 /* XibTextField.m */,
+				E89E5C26248FA38D006A0E16 /* XibBarButtonItem.m */,
+				E89E5C27248FA38D006A0E16 /* XibButton.h */,
+				E89E5C28248FA38D006A0E16 /* XibView.m */,
+				E89E5C29248FA38D006A0E16 /* XibImageView.h */,
+				E89E5C2A248FA38D006A0E16 /* XibView2.h */,
+				E89E5C2B248FA38D006A0E16 /* XibLabel.m */,
+				E89E5C2C248FA38D006A0E16 /* XibNavigationItem.m */,
+			);
+			path = XibView;
+			sourceTree = "<group>";
+		};
+		E89E5C36248FAC1D006A0E16 /* Two */ = {
+			isa = PBXGroup;
+			children = (
+				E89E5C37248FAC1D006A0E16 /* LFViewController.m */,
+				E89E5C39248FAC1D006A0E16 /* LFViewController.h */,
+				E89E5C38248FAC1D006A0E16 /* Home.storyboard */,
+				E89E5C3C248FAC38006A0E16 /* LFButton11.h */,
+				E89E5C3D248FAC38006A0E16 /* LFButton11.m */,
+				E89E5C3F248FAD81006A0E16 /* LFButton11.xib */,
+			);
+			path = Two;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,11 +252,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E847E1DC248E1FD700B62968 /* LaunchScreen.storyboard in Resources */,
+				E89E5C3B248FAC1D006A0E16 /* Home.storyboard in Resources */,
 				E847E1F3248E277900B62968 /* LFLabel1.xib in Resources */,
 				E847E1E9248E205A00B62968 /* LFButton1.xib in Resources */,
-				E847E209248E5D7600B62968 /* Home.storyboard in Resources */,
 				E847E1D9248E1FD700B62968 /* Assets.xcassets in Resources */,
+				E8CC9C3B248F1BE300945B90 /* Color.md in Resources */,
+				E89E5C17248F9052006A0E16 /* CView.xib in Resources */,
+				E89E5C0D248F866B006A0E16 /* LFButton2.xib in Resources */,
+				E89E5C12248F88BC006A0E16 /* PlayVIew.xib in Resources */,
+				E89E5C2F248FA38D006A0E16 /* XibViewReadMe.md in Resources */,
 				E847E1D7248E1FD700B62968 /* Main.storyboard in Resources */,
+				E89E5C40248FAD81006A0E16 /* LFButton11.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,10 +273,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E89E5C0B248F8661006A0E16 /* LFButton2.m in Sources */,
 				E847E1D4248E1FD700B62968 /* ViewController.m in Sources */,
+				E89E5C3A248FAC1D006A0E16 /* LFViewController.m in Sources */,
+				E89E5C33248FA38D006A0E16 /* XibView.m in Sources */,
 				E847E1E7248E202000B62968 /* LFButton1.m in Sources */,
-				E847E20C248E5DBB00B62968 /* LFViewController.m in Sources */,
+				E89E5C34248FA38D006A0E16 /* XibLabel.m in Sources */,
+				E89E5C35248FA38D006A0E16 /* XibNavigationItem.m in Sources */,
 				E847E1CE248E1FD700B62968 /* AppDelegate.m in Sources */,
+				E89E5C3E248FAC38006A0E16 /* LFButton11.m in Sources */,
+				E89E5C31248FA38D006A0E16 /* XibTextField.m in Sources */,
+				E89E5C1A248F961D006A0E16 /* LFButton3.m in Sources */,
+				E89E5C2E248FA38D006A0E16 /* XibImageView.m in Sources */,
+				E89E5C30248FA38D006A0E16 /* XibView2.m in Sources */,
+				E89E5C32248FA38D006A0E16 /* XibBarButtonItem.m in Sources */,
+				E89E5C10248F87F3006A0E16 /* UIColor+MQHex.m in Sources */,
+				E89E5C15248F9047006A0E16 /* CView.m in Sources */,
+				E89E5C2D248FA38D006A0E16 /* XibButton.m in Sources */,
 				E847E1DF248E1FD700B62968 /* main.m in Sources */,
 				E847E1F6248E28CE00B62968 /* LFLabel1.m in Sources */,
 			);

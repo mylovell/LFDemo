@@ -1,104 +1,56 @@
 //
-//  LFButton1.m
+//  LFButton11.m
 //  LFXibToStoryboard
 //
-//  Created by luofeng on 2020/6/8.
+//  Created by luofeng on 2020/6/9.
 //  Copyright © 2020 9130. All rights reserved.
 //
 
-#import "LFButton1.h"
+#import "LFButton11.h"
 
-@implementation LFButton1
+@implementation LFButton11
 
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        NSLog(@"%s",__func__);
-        // 为了能在 xib 中看到 layer 的设置【代码中的设置，只有initWithFrame中的设置才会在xib中展示】
-//        [self _commonUse];
-        self.fontName = @"PingFangSC-Medium";
-        self.fontSize = 18;
-        self.fontColor = @"#942192";
-        self.backColor = @"#FF2600";
-        self.cornerRadius = 20;
-        self.borderWidth = 2;
-        self.borderColor = @"#267545";
-    }
-    return self;
-}
-
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
-    self = [super initWithCoder:coder];
-    if (self) {
-        NSLog(@"%s",__func__);
-        NSLog(@"titleForState----%@",[self titleForState:(UIControlStateNormal)]);
-        // 为了能让 xib 中加载出来的 layer 被真正设置
-        [self _commonUse];
-    }
-    return self;
-}
-
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    NSLog(@"%s",__func__);
-    [self _commonUse];
-    
-    NSLog(@"---");
-}
-
-/*
- 在这里弥补 IBInspectable 显示在 storyboard 上无效设置:
- 1、layer相关的设置 如圆角cornerRadius 、2、背景颜色backgroundColor
- 
- */
-
-- (void)_commonUse {
-    
-    self.fontName = @"PingFangSC-Medium";
-    self.fontSize = 18;
-    self.fontColor = @"#942192";
-    self.backColor = @"#FF2600";
-    self.cornerRadius = 20;
-    self.borderWidth = 2;
-    self.borderColor = @"#267545";
-    
-}
 
 - (void)setFontColor:(NSString *)hex {
-    UIColor *titleColor = [LFButton1 colorWithHexString:hex alpha:1];
+    hex = @"FF2600";
+    UIColor *titleColor = [self colorWithHexString:hex alpha:1];
     [self setTitleColor:titleColor forState:(UIControlStateNormal)];
 }
 
 - (void)setFontName:(NSString *)fontName {
+    fontName = @"PingFangSC-Semibold";
     fontName = [self fontNameMap:fontName];
     UIFont *font = [UIFont fontWithName:fontName size:self.titleLabel.font.pointSize];
     self.titleLabel.font = font;
 }
 
 - (void)setFontSize:(NSUInteger )fontSize {
+    fontSize = 20;
     UIFont *font = [self.titleLabel.font fontWithSize:fontSize];
     self.titleLabel.font = font;
 }
 
 - (void)setCornerRadius:(CGFloat)cornerRadius {
+    cornerRadius = 10;
     self.layer.cornerRadius = cornerRadius;
     self.layer.masksToBounds = YES;
 }
 
 - (void)setBorderWidth:(CGFloat)borderWidth {
+    borderWidth = 4;
     self.layer.borderWidth = borderWidth;
 }
 
 - (void)setBorderColor:(NSString *)borderColor {
-    UIColor *color = [LFButton1 colorWithHexString:borderColor alpha:1];
+    borderColor = @"008F00";
+    UIColor *color = [self colorWithHexString:borderColor alpha:1];
     self.layer.borderColor = color.CGColor;
 }
 
 - (void)setBackColor:(NSString *)backColor {
-    UIColor *color = [LFButton1 colorWithHexString:backColor alpha:1];
+    backColor = @"FF9300";
+    UIColor *color = [self colorWithHexString:backColor alpha:1];
     self.backgroundColor = color;
     
 }
@@ -110,7 +62,7 @@
  @param opacity 透明度
  @return 16进制字符串对应的颜色
  */
-+(UIColor *)colorWithHexString:(NSString *)hexColor alpha:(float)opacity{
+- (UIColor *)colorWithHexString:(NSString *)hexColor alpha:(float)opacity{
     NSString * cString = [[hexColor stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
 
     // String should be 6 or 8 characters

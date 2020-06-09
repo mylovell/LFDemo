@@ -1,89 +1,57 @@
 //
-//  LFLabel1.m
-//  LFXibToStoryboard
+//  XibBarButtonItem.m
+//  Parents
 //
-//  Created by luofeng on 2020/6/8.
+//  Created by luofeng on 2020/5/7.
 //  Copyright © 2020 9130. All rights reserved.
 //
 
-#import "LFLabel1.h"
+#import "XibBarButtonItem.h"
 
-@implementation LFLabel1
-
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self _commonUse];
-    }
-    return self;
-}
-
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
-    self = [super initWithCoder:coder];
-    if (self) {
-        // 为了能让 xib 中加载出来的 layer 被真正设置
-        [self _commonUse];
-    }
-    return self;
-}
-
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    
-    [self _commonUse];
-    
-}
-
-/*
- 在这里弥补 IBInspectable 无效设置: 1、圆角cornerRadius 、2、背景颜色backgroundColor
- 
- */
-- (void)_commonUse {
-    
-//    self.cornerRadius = 20;
-//    self.borderWidth = 2;
-//    self.borderColor = @"942192";
-//    self.backColor = @"AA7942";
-    
-}
-
-#pragma mark - inner method
+@implementation XibBarButtonItem
 
 - (void)setFontColor:(NSString *)hex {
-    self.textColor = [LFLabel1 colorWithHexString:hex alpha:1];
+    
+    NSDictionary *newAttri = @{NSForegroundColorAttributeName : [XibBarButtonItem colorWithHexString:hex alpha:1]};
+    
+    NSDictionary *originAttr = [self titleTextAttributesForState:(UIControlStateNormal)];
+    
+    NSMutableDictionary *mutDic = [NSMutableDictionary dictionaryWithDictionary:originAttr];
+    [mutDic addEntriesFromDictionary:newAttri];
+    
+    [self setTitleTextAttributes:mutDic forState:(UIControlStateNormal)];
 }
 
 - (void)setFontName:(NSString *)fontName {
     
+    NSDictionary *originAttr = [self titleTextAttributesForState:(UIControlStateNormal)];
+    UIFont *originFont = [originAttr valueForKey:NSFontAttributeName];
+    
+    
     fontName = [self fontNameMap:fontName];
-    self.font = [UIFont fontWithName:fontName size:self.font.pointSize];
-}
-
-- (void)setFontSize:(NSUInteger )fontSize {
-    self.font = [self.font fontWithSize:fontSize];
-}
-
-- (void)setCornerRadius:(CGFloat)cornerRadius {
-    self.layer.cornerRadius = cornerRadius;
-    self.layer.masksToBounds = YES;
+    NSDictionary *newAttri = @{NSFontAttributeName : [UIFont fontWithName:fontName size:originFont.pointSize]};
+    
+    NSMutableDictionary *mutDic = [NSMutableDictionary dictionaryWithDictionary:originAttr];
+    [mutDic addEntriesFromDictionary:newAttri];
+    
+    [self setTitleTextAttributes:mutDic forState:(UIControlStateNormal)];
     
 }
 
-- (void)setBorderWidth:(CGFloat)borderWidth {
-    self.layer.borderWidth = borderWidth;
+- (void)setFontSize:(NSUInteger )fontSize {
+    
+    NSDictionary *originAttr = [self titleTextAttributesForState:(UIControlStateNormal)];
+    UIFont *originFont = [originAttr valueForKey:NSFontAttributeName];
+    
+    NSDictionary *newAttri = @{NSFontAttributeName : [UIFont fontWithName:originFont.fontName size:fontSize]};
+    
+    NSMutableDictionary *mutDic = [NSMutableDictionary dictionaryWithDictionary:originAttr];
+    [mutDic addEntriesFromDictionary:newAttri];
+    
+    [self setTitleTextAttributes:mutDic forState:(UIControlStateNormal)];
+    
 }
 
-- (void)setBorderColor:(NSString *)borderColor {
-    UIColor *color = [LFLabel1 colorWithHexString:borderColor alpha:1];
-    self.layer.borderColor = color.CGColor;
-}
-
-- (void)setBackColor:(NSString *)backColor {
-    UIColor *color = [LFLabel1 colorWithHexString:backColor alpha:1];
-    self.backgroundColor = color;
-}
 
 /**
  16进制颜色转换为UIColor
@@ -144,6 +112,5 @@
     }
     return fontName;
 }
-
 
 @end
